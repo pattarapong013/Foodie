@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie-Chaiwat</title>
+    <script
+      src="https://kit.fontawesome.com/a59ce1ef3a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- default navbar -->
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openMenu()">
+          <span class="material-icons" style="font-size: 30px">sort</span>
+        </a>
+      </span>
+      <div class="banner">
+        <i class="fa-solid fa-burger"></i
+        ><span class="text"> Foodie Restuarant</span>
+      </div>
+      <div>
+        <ul class="navbar-nav">
+          <li>
+            <a href="#"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-shop"></i> สาขา</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bowl-rice"></i> รายการอาหาร</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-percent"></i> โปรโมชั่น</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-address-book"></i> ติดต่อเรา</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- side menu (small device) -->
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeMenu()">&times;</a>
+      <a href="#">หน้าหลัก</a>
+      <a href="">สาขา</a>
+      <a href="">รายการอาหาร</a>
+      <a href="">โปรโมชั่น</a>
+      <a href="">ติดต่อเรา</a>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+      <!-- top-container -->
+      <section class="top-container">
+        <header class="showcase">
+          <h2>ลด 50%</h2>
+          <h1>เมื่อสั่ง Premium Pasta!</h1>
+          <p>เฉพาะสัปดาห์นี้เท่านั้น</p>
+          <a href="#" class="btn">Order Now</a>
+        </header>
+        <div class="top-box top-box-a">
+          <h1>Meaty Pizza</h1>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="top-box top-box-b">
+          <h1>Juicy Burger</h1>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="top-box top-box-c">
+          <h1>Veggy Pizza -- 30% off</h1>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+      </section>
+
+      <!-- mid container -->
+      <section class="boxes">
+        <div class="box">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>083-4373083</h3>
+        </div>
+        <div class="box">
+          <i class="fa-brands fa-line"></i>
+          <h3>@foodiee</h3>
+        </div>
+        <div class="box">
+          <i class="fa-brands fa-facebook"></i>
+          <h3>Foodie <br />Restuarant</h3>
+        </div>
+        <div class="box">
+          <i class="fa-brands fa-instagram"></i>
+          <h3>@foodie2023</h3>
+        </div>
+        <div class="box">
+          <i class="fa-brands fa-twitter"></i>
+          <h3>@foodie2023</h3>
+        </div>
+      </section>
+
+      <div class="container-form">
+        <header>Contact Us</header>
+        <form action="#" class="form">
+          <div class="column">
+            <div class="input-boxes">
+              <label for="">Full Name</label>
+              <div class="input-box">
+                <input type="text" placeholder="Enter Full Name" />
+              </div>
+            </div>
+
+            <div class="input-boxes">
+              <label for="">Last Name</label>
+              <div class="input-box">
+                <i></i>
+                <input type="text" placeholder="Last Name" />
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="input-boxes">
+              <label for="">Phone</label>
+              <div class="input-box">
+                <input type="text" placeholder="Enter Phone" />
+              </div>
+            </div>
+            <div class="input-boxes">
+              <label for="">E-mail</label>
+              <div class="input-box">
+                <input type="text" placeholder="Enter e-mail" />
+              </div>
+            </div>
+          </div>
+          <button class="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">chaiwat  66309010002</footer>
+    <script>
+      function openMenu() {
+        document.getElementById("side-menu").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      function closeMenu() {
+        document.getElementById("side-menu").style.width = "0px";
+        document.getElementById("main").style.marginLeft = "0px";
+      }
+    </script>
+  </body>
+</html>
